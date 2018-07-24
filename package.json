@@ -1,10 +1,10 @@
 {
-  "name": "minui",
+  "name": "minui-x",
   "description": "MinUI 小程序组件库",
   "version": "1.0.8",
   "repository": {
     "type": "git",
-    "url": "https://github.com/meili/minui.git"
+    "url": "https://github.com/beysong/minui.git"
   },
   "author": "",
   "license": "MIT",
