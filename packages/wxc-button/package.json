@@ -1,6 +1,6 @@
 {
-  "name": "@minui/wxc-button",
-  "version": "1.0.5",
+  "name": "@beysong/wxc-button",
+  "version": "1.0.6",
   "description": "MinUI 小程序组件 - 按钮组件",
   "main": "dist/index.js",
   "scripts": {},

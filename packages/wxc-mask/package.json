@@ -1,11 +1,11 @@
 {
-  "name": "@minui/wxc-mask",
-  "version": "1.0.8",
+  "name": "@beysong/wxc-mask",
+  "version": "1.0.9",
   "description": "MinUI 小程序组件 - 遮罩层",
   "main": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/meili/minui/tree/master/packages/wxc-mask"
+    "url": "https://github.com/beysong/minui/tree/master/packages/wxc-mask"
   },
   "author": "Min Team",
   "license": "MIT",

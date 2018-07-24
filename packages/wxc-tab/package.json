@@ -1,11 +1,11 @@
 {
-  "name": "@minui/wxc-tab",
-  "version": "1.0.8",
+  "name": "@beysong/wxc-tab",
+  "version": "1.0.9",
   "description": "MinUI 小程序组件 - 选项卡",
   "main": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/meili/minui/tree/master/packages/wxc-tab"
+    "url": "https://github.com/beysong/minui/tree/master/packages/wxc-tab"
   },
   "author": "Min Team",
   "license": "MIT",

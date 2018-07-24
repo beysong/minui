@@ -1,11 +1,11 @@
 {
-  "name": "@minui/wxc-flex",
-  "version": "1.0.6",
+  "name": "@beysong/wxc-flex",
+  "version": "1.0.7",
   "description": "MinUI 小程序组件 - flex",
   "main": "dist/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/meili/minui/tree/master/packages/wxc-flex"
+    "url": "https://github.com/beysong/minui/tree/master/packages/wxc-flex"
   },
   "author": "Min Team",
   "license": "ISC",

@@ -1,12 +1,12 @@
 {
-  "name": "@minui/wxc-cc",
-  "version": "1.0.4",
+  "name": "@beysong/wxc-cc",
+  "version": "1.0.5",
   "description": "MinUI 小程序组件 - 水平垂直居中",
   "main": "dist/index.js",
   "scripts": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/meili/minui/tree/master/packages/wxc-cc"
+    "url": "https://github.com/beysong/minui/tree/master/packages/wxc-cc"
   },
   "author": "Min Team",
   "license": "MIT",
