@@ -1,5 +1,5 @@
 {
-  "name": "minui-x",
+  "name": "minui",
   "description": "MinUI 小程序组件库",
   "version": "1.0.8",
   "repository": {
@@ -9,10 +9,10 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@minui/wxc-example": "^1.0.0",
-    "@minui/wxc-example-demo": "^1.0.0",
-    "@minui/wxc-example-md": "^1.0.0",
-    "@minui/wxc-example-menu": "^1.0.4"
+    "@beysong/wxc-example": "^1.0.0",
+    "@beysong/wxc-example-demo": "^1.0.0",
+    "@beysong/wxc-example-md": "^1.0.0",
+    "@beysong/wxc-example-menu": "^1.0.4"
   },
   "minConfig": {
     "projectType": "component"

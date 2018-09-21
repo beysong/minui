@@ -1,7 +1,7 @@
 <template>
-  <view class="list__body list__{{mode}}" bindtap="onClick">
+  <view hover-class="hover-class" class="list__body list__{{mode}}" bindtap="onClick">
 
-    <image wx:if="{{src}}" class="list__image" src="{{src}}" mode="aspectFill"></image>
+    <image wx:if="{{src}}" class="list__image" src="{{src}}" mode="aspectFit"></image>
 
     <wxc-icon wx:if="{{!src && icon}}" class="list__icon" size="38" type="{{icon}}" color="{{iconColor}}"></wxc-icon>
 
@@ -24,10 +24,10 @@
 export default {
   config: {
     usingComponents: {
-      'wxc-icon': '@minui/wxc-icon'
+      'wxc-icon': '@beysong/wxc-icon'
     }
   },
-  behaviors: [ ],
+  behaviors: [],
   properties: {
     title: {
       type: String,
@@ -63,74 +63,79 @@ export default {
     },
     arrow: {
       type: Boolean,
-      value: true  // 是否显示箭头
+      value: true // 是否显示箭头
     },
     mode: {
       type: String,
       value: 'normal' // 有边框和无边框 normal, none
     }
   },
-  data: { },
+  data: {},
   methods: {
     onClick(event) {
-      let detail = event.detail;
-      let option = {};
-      this.triggerEvent('click', detail, option);
+      let detail = event.detail
+      let option = {}
+      this.triggerEvent('click', detail, option)
     }
   }
 }
-
-
 </script>
 
 <style lang="pcss">
-  @b list {
-    @e body {
-      display: flex;
-      align-items: center;
-      min-height: 90rpx;
-      line-height: 1.4;
-      padding: 20rpx 30rpx 20rpx 0;
-      margin-left: 30rpx;
-      box-sizing: border-box;
-      border-bottom: 1px solid #ececec;
-      font-size: 32rpx;
-      color: #333;
+@b hover-class {
+  background-color: #f9f8f8;
+}
+@b list {
+  @e body {
+    display: flex;
+    align-items: center;
+    min-height: 90rpx;
+    line-height: 1.4;
+    padding: 20rpx 30rpx;
+    /* margin-left: 30rpx; */
+    box-sizing: border-box;
+    border-bottom: 1px solid #ececec;
+    font-size: 32rpx;
+    color: #333;
+  }
+  @e none {
+    border: none;
+  }
+  @e image {
+    width: 38rpx;
+    height: 38rpx;
+    margin-right: 30rpx;
+  }
+  @e icon {
+    margin-right: 30rpx;
+  }
+  @e title {
+    flex: 1;
+    @m main {
+      font-size: 28rpx;
+      color: #323232;
     }
-    @e none {
-      border: none;
-    }
-    @e image {
-      width: 38rpx;
-      height: 38rpx;
-      margin-right: 30rpx;
-    }
-    @e icon {
-      margin-right: 30rpx;
-    }
-    @e title {
-      flex: 1;
-      @m sub {
-        margin-top: 14rpx;
-        font-size: 28rpx;
-        line-height: 40rpx;
-        color: #999;
-      }
-    }
-    @e desc {
-      @m dot {
-        width: 16rpx;
-        height: 16rpx;
-        margin-right: 18rpx;
-        border-radius: 16rpx;
-      }
-      @m text {
-        color: #999;
-        font-size: 24rpx;
-      }
-      @m arrow {
-        margin-left: 8rpx;
-      }
+    @m sub {
+      margin-top: 14rpx;
+      font-size: 28rpx;
+      line-height: 40rpx;
+      color: #323232;
     }
   }
+  @e desc {
+    @m dot {
+      width: 16rpx;
+      height: 16rpx;
+      margin-right: 18rpx;
+      border-radius: 16rpx;
+    }
+    @m text {
+      color: #323232;
+      font-size: 28rpx;
+    }
+    @m arrow {
+      margin-left: 8rpx;
+    }
+  }
+}
 </style>

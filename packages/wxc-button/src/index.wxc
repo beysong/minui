@@ -37,11 +37,11 @@ export default {
   properties: {
     size: {
       type: String,
-      value: "normal" // normal small large
+      value: 'normal' // normal small large
     },
     type: {
       type: String,
-      value: "" //beauty selection success primary danger warning secondary info dark disabled  按钮的样式类型
+      value: '' //beauty selection success primary danger warning secondary info dark disabled  按钮的样式类型
     },
     plain: {
       type: Boolean,
@@ -49,11 +49,11 @@ export default {
     },
     value: {
       type: String,
-      value: ""
+      value: ''
     },
     hoverClass: {
       type: String,
-      value: "btn__hover" // btn__hover none
+      value: 'btn__hover' // btn__hover none
     },
     loading: {
       type: Boolean,
@@ -61,15 +61,15 @@ export default {
     },
     btnStyle: {
       type: String,
-      value: ""
+      value: ''
     },
     openType: {
       type: String,
-      value: ""
+      value: ''
     },
     appParameter: {
       type: String,
-      value: ""
+      value: ''
     },
     hoverStopPropagation: {
       type: Boolean,
@@ -85,23 +85,23 @@ export default {
     },
     lang: {
       type: String,
-      value: "en"
+      value: 'en'
     },
     sessionFrom: {
       type: String,
-      value: ""
+      value: ''
     },
     sendMessageTitle: {
       type: String,
-      value: ""
+      value: ''
     },
     sendMessagePath: {
       type: String,
-      value: ""
+      value: ''
     },
     sendMessageImg: {
       type: String,
-      value: ""
+      value: ''
     },
     showMessageCard: {
       type: Boolean,
@@ -113,32 +113,32 @@ export default {
     onSubmit(event) {
       let detail = event.detail
       let option = {}
-      this.triggerEvent("submit", detail, option)
+      this.triggerEvent('submit', detail, option)
     },
     btnClick(event) {
       let detail = event.detail
       let option = {}
-      this.triggerEvent("click", detail, option)
+      this.triggerEvent('click', detail, option)
     },
     getUserInfo(event) {
       let detail = event.detail
       let option = {}
-      this.triggerEvent("getuserinfo", detail, option)
+      this.triggerEvent('getuserinfo', detail, option)
     },
     onContact(event) {
       let detail = event.detail
       let option = {}
-      this.triggerEvent("contact", detail, option)
+      this.triggerEvent('contact', detail, option)
     },
     getPhoneNumber(event) {
       let detail = event.detail
       let option = {}
-      this.triggerEvent("getphonenumber", detail, option)
+      this.triggerEvent('getphonenumber', detail, option)
     },
     onError(event) {
       let detail = event.detail
       let option = {}
-      this.triggerEvent("errror", detail, option)
+      this.triggerEvent('errror', detail, option)
     }
   }
 }
@@ -152,7 +152,6 @@ export default {
   border-radius: 4rpx;
   white-space: nowrap;
   vertical-align: middle;
-  font-weight: 400;
 }
 
 .btn::after {
@@ -165,7 +164,7 @@ export default {
   height: 90rpx;
   line-height: 90rpx;
   padding: 0 24rpx;
-  font-size: 36rpx;
+  font-size: 32rpx;
 }
 .btn__size--normal {
   display: inline-block;
@@ -198,17 +197,17 @@ export default {
 }
 .btn__beauty--false {
   color: #fff;
-  background-color: #ff5777;
-  border-color: #ff5777;
+  background-color: #c8161d;
+  border-color: #c8161d;
 }
 .btn__beauty--true {
-  color: #ff5777;
+  color: #c8161d;
   background: transparent none;
-  border-color: #ff5777;
+  border-color: #c8161d;
 }
 .btn__primary--false {
   color: #fff;
-  background-color: #323232;
+  background-color: #007bff;
   border-color: #007bff;
 }
 .btn__primary--true {
