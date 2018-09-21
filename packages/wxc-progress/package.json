@@ -1,6 +1,6 @@
 {
   "name": "@beysong/wxc-progress",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "MinUI 小程序组件 - 进度条",
   "main": "dist/index.js",
   "repository": {

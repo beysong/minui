@@ -1,6 +1,6 @@
 {
   "name": "@beysong/wxc-abnor",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "MinUI 小程序组件 - 异常流提示",
   "main": "dist/index.js",
   "repository": {
